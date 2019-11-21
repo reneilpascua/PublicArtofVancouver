@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LikedListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_gravity="left">
+
+        <TextView
+            android:id="@+id/tv_likedListHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_marginLeft="@dimen/titlesize"
+            android:elegantTextHeight="false"
+            android:fontFamily="@font/altedin1451mit"
+            android:gravity="left"
+            android:text="Public"
+            android:textColor="@color/black"
+            android:textSize="60sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_likedListHeading2"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_marginLeft="@dimen/titlesize"
+            android:fontFamily="@font/altedin1451mit"
+            android:gravity="left"
+            android:text="FAVORITE"
+            android:textColor="@color/black"
+            android:textSize="60sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_likedListHeading3"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_marginLeft="@dimen/titlesize"
+            android:fontFamily="@font/altedin1451mit"
+            android:gravity="left"
+            android:text="ART"
+            android:textColor="@color/black"
+            android:textSize="60sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/black" />
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/lv_likedList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+</LinearLayout>
+
+

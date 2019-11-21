@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">PublicArtofVancouver</string>
+    <string name="title_activity_search_result">Map</string>
+    <string name="setScaleHint">Distance to Search (KM)</string>
+    <string name="setScaleButton">Update Search</string>
+    <string name="locatedAt">Location:</string>
+    <string name="searchresults">Search Results:</string>
+    <string name="loading">LOADING...</string>
+    <string name="placeholder">placeholder for buttons</string>
+    <string name="goCurrent">YOUR LOCATION</string>
+    <string name="updateSearch">Update</string>
+
+    <string name="topResultsText">Results Sorted By: </string>
+    <string name="byLikes">LIKES</string>
+    <string name="byDistance">DISTANCE</string>
+    <string name="liked">FAVORITES</string>
+    <string name="likethis">LIKE</string>
+
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="login">LOGIN</string>
+    <string name="addUser">SIGN UP</string>
+    <string name="username">USER NAME</string>
+    <string name="newusername">NEW USER</string>
+    <string name="newpassword">NEW PASSWORD</string>
+    <string name="btn_signup">SIGN UP</string>
+    <string name="password">PASSWORD</string>
+    <string-array name="choices">
+        <item>10</item>
+        <item>50</item>
+        <item>100</item>
+        <item>250</item>
+        <item>All</item>
+    </string-array>
+</resources>

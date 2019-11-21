@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    android:gravity="center"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/secondaryLightColor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="2"
+        android:gravity="center_vertical"
+        android:layout_gravity="left">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_marginLeft="@dimen/titlesize"
+            android:elegantTextHeight="false"
+            android:fontFamily="@font/altedin1451mit"
+            android:gravity="left"
+            android:text="Public"
+            android:textColor="@color/black"
+            android:textSize="60sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_marginLeft="@dimen/titlesize"
+            android:fontFamily="@font/altedin1451mit"
+            android:gravity="left"
+            android:text="Art of"
+            android:textColor="@color/black"
+            android:textSize="60sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_title3"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_marginLeft="@dimen/titlesize"
+            android:fontFamily="@font/altedin1451mit"
+            android:gravity="left"
+            android:text="Vancouver"
+            android:textColor="@color/black"
+            android:textSize="60sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/black" />
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_loginTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/titlesize"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:fontFamily="@font/din"
+            android:gravity="left"
+            android:text="FIND THE ART"
+            android:textColor="@color/darkgrey" />
+
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/din"
+            android:hint="@string/username"
+            android:textColor="@color/black"
+            android:textColorHint="@color/lightgrey"
+            android:textColorLink="@color/primaryColor"
+            android:inputType="text"
+            android:maxLines="1"/>
+
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/din"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textColorHint="@color/lightgrey"
+            android:textColorLink="@color/primaryColor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryColor"
+        android:layout_marginTop="20dp"
+        android:layout_weight="2">
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:onClick="onClickLogin"
+            app:cornerRadius="0dp" />
+
+        <Button
+            android:id="@+id/btn_addUser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:onClick="onClickSignup"
+            app:cornerRadius="0dp" />
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

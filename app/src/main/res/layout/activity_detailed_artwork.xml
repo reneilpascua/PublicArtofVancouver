@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailedArtworkActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_gravity="center"
+        android:background="@color/primaryColor"
+        android:paddingVertical="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="TOTAL"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/tv_numLikes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:layout_weight="3"/>
+
+        <Button
+            android:id="@+id/btn_like"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_favorite_border_black_24dp"
+            android:drawablePadding="5px"
+            android:onClick="likeThisArt"
+            android:text="@string/likethis"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_detailedPic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="10dp"
+        android:background="@color/secondaryLightColor">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_typeLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="TYPE"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:maxLines="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_statusLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="STATUS"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_yearLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="YEAR"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tv_yearOfInstallation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_artworkID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/dincondensed"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/primaryColor"
+        android:textSize="40dp"/>
+
+    <TextView
+        android:id="@+id/tv_descLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DESCRIPTION"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginVertical="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_statementLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ARTIST STATEMENT"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginVertical="5dp"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/tv_artistprojectstatement"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_locationLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="LOCATION"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginVertical="5dp"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_marginHorizontal="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_site"
+        android:layout_marginHorizontal="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_neighbourhood"
+        android:layout_marginHorizontal="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_URL"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:maxLines="1"
+        android:textColor="@color/primaryDarkColor"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+
+</ScrollView>

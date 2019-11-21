@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_ListItemImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"/>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="80dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+
+
+            <TextView
+                android:id="@+id/tv_ListItemName"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_width="wrap_content"
+                android:layout_height="29dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/din"
+                android:text="Title goes here"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_ListItemDesc"
+                style="@style/TextAppearance.MaterialComponents.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/din"
+                android:maxLines="3"
+                android:text="Subtitle goes here"
+                android:scrollHorizontally="false"
+                android:paddingRight="16dp"
+                android:ellipsize="end"
+                android:textSize="14dp"
+                app:layout_constraintStart_toStartOf="@+id/tv_ListItemName"
+                app:layout_constraintTop_toBottomOf="@+id/tv_ListItemName" />
+
+            <TextView
+                android:id="@+id/tv_ListItemNumLikes"
+                style="@style/TextAppearance.MaterialComponents.Caption"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="16dp"
+                android:layout_marginRight="16dp"
+                android:drawableLeft="@drawable/ic_thumb_up_black_24dp"
+                android:drawablePadding="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_ListItemName" />
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imageView"-->
+<!--                android:layout_width="19dp"-->
+<!--                android:layout_height="19dp"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/tv_ListItemNumLikes"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/tv_ListItemNumLikes"-->
+<!--                app:srcCompat="@drawable/ic_thumb_up_black_24dp" />-->
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+</LinearLayout>
